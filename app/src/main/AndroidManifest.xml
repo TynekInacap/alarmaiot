@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Comunicación MQTT con el broker (Wi-Fi o datos) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Saber si hay red disponible antes de conectar -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Notificación de intrusión (Android 13+ la pide en tiempo de ejecución) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Vibración de la sirena en el modo Central -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- El sensor de proximidad es opcional: sin él se usa la distancia simulada -->
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- Para abrir el marcador con el 133 sin pedir permiso de llamada (mínimo privilegio) -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:scheme="tel" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".AlarmaApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlarmaIoT"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.HomeActivity" android:exported="false" />
+        <activity android:name=".ui.CentralActivity" android:exported="false" android:launchMode="singleTop" />
+        <activity android:name=".ui.PanelActivity" android:exported="false" android:launchMode="singleTop" />
+        <activity android:name=".ui.HistoryActivity" android:exported="false" />
+        <activity android:name=".ui.UsersActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.SettingsActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

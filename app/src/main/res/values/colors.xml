@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#1D3B8B</color>
+    <color name="brand_container">#DCE3FF</color>
+    <color name="on_brand_container">#001551</color>
+    <color name="brand_secondary">#4B5C92</color>
+    <color name="surface">#FBF8FF</color>
+    <color name="estado_desarmada">#2E7D32</color>
+    <color name="estado_armada">#8A5A00</color>
+    <color name="led_amarillo">#FFC928</color>
+    <color name="estado_alerta">#C62828</color>
+    <color name="estado_desconocido">#757780</color>
+    <color name="led_off">#33808080</color>
+    <color name="emergencia">#B3261E</color>
+    <color name="icon_background">#1D3B8B</color>
+</resources>

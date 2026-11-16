@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alarma IoT</string>
+    <string name="app_subtitle">Sistema antirrobo por proximidad</string>
+    <string name="footer_security">Conexión cifrada (TLS + AES-GCM) · ISO/IEC 27400</string>
+
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="password_confirm">Confirmar contraseña</string>
+    <string name="login">Ingresar</string>
+    <string name="create_admin">Crear administrador</string>
+    <string name="setup_info">Primera vez: crea la cuenta de administrador. La contraseña debe tener al menos 10 caracteres, con mayúscula, minúscula, número y símbolo (ej. Alarma#2026).</string>
+    <string name="password_policy">Mínimo 10 caracteres, con mayúscula, minúscula, número y símbolo</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="recover_title">Recuperar contraseña</string>
+    <string name="recover_help">Usa el código de recuperación que te mostró la app al crear tu cuenta. Si no lo tienes, pide al administrador que restablezca tu contraseña.</string>
+    <string name="recovery_code">Código de recuperación</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="alarm_pin">PIN de la alarma</string>
+
+    <string name="mode_central">Modo Central</string>
+    <string name="mode_central_desc">Este teléfono actúa como el dispositivo IoT de la puerta: sensor de proximidad, LEDs y sirena.</string>
+    <string name="mode_panel">Modo Panel de control</string>
+    <string name="mode_panel_desc">Arma, desarma y monitorea la alarma a distancia. Recibe la alerta de intrusión.</string>
+    <string name="history">Historial y lecturas</string>
+    <string name="users">Usuarios y roles</string>
+    <string name="settings">Configuración de conexión</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="pairing_missing">Falta vincular los teléfonos: define el ID de casa y el código de vinculación en Configuración.</string>
+    <string name="configure">Configurar</string>
+
+    <string name="state_label">Estado de la alarma</string>
+    <string name="led_green">Desarmada</string>
+    <string name="led_yellow">Armada</string>
+    <string name="led_red">Alerta</string>
+    <string name="sensor_title">Sensor de distancia (simula HC-SR04)</string>
+    <string name="use_proximity">Usar sensor de proximidad del teléfono</string>
+    <string name="simulated_distance">Distancia simulada (mueve para acercar un objeto)</string>
+    <string name="threshold_hint">Se dispara si un objeto se acerca a menos de 20 cm estando armada</string>
+    <string name="arm">Armar</string>
+    <string name="disarm">Desarmar</string>
+    <string name="query_state">Estado</string>
+    <string name="serial_monitor">Monitor serie</string>
+
+    <string name="central_link">Central</string>
+    <string name="realtime_distance">Distancia en tiempo real</string>
+    <string name="call_133">Llamar a Carabineros (133)</string>
+    <string name="recent_events">Últimos eventos</string>
+    <string name="see_history">Ver historial completo</string>
+
+    <string name="readings_title">Lecturas almacenadas</string>
+    <string name="clear_history">Borrar historial</string>
+    <string name="add_user">Agregar usuario</string>
+    <string name="role">Rol</string>
+
+    <string name="broker">Broker MQTT (TLS)</string>
+    <string name="broker_user">Usuario del broker (opcional)</string>
+    <string name="broker_pass">Contraseña del broker (opcional)</string>
+    <string name="home_id">ID de casa</string>
+    <string name="pairing_code">Código de vinculación</string>
+    <string name="generate">Generar</string>
+    <string name="save">Guardar</string>
+    <string name="settings_help">Usa el mismo ID de casa y código de vinculación en ambos teléfonos. El código cifra los mensajes de extremo a extremo y nunca se envía por la red.</string>
+    <string name="settings_readonly">Solo un administrador puede modificar la configuración.</string>
+</resources>
